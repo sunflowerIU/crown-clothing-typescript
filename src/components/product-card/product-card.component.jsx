@@ -1,3 +1,4 @@
+import React from "react";
 import {
   ProductCardContainer,
   Footer,
@@ -7,7 +8,7 @@ import {
 // import { DropdownContext } from "../../contexts/cart.context";
 // import { useContext } from "react";
 import Button from "../button/button.component";
-import {addItemsTocart} from '../../store/cart/cart.reducer'
+import { addItemsTocart } from '../../store/cart/cart.reducer'
 import { useDispatch } from "react-redux";
 
 const ProductCard = ({ product }) => {

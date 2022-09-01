@@ -1,3 +1,4 @@
+import React from "react";
 import {
   BaseButton,
   GoogleSignInButton,
@@ -29,7 +30,7 @@ const Button = ({ children, buttonType, isLoading, ...otherProps }) => {
   const CustomizedButton = getButton(buttonType);
   return (
     <CustomizedButton disabled={isLoading} {...otherProps}>
-      {isLoading ? <ButtonSpinner /> : children} 
+      {isLoading ? <ButtonSpinner /> : children}
     </CustomizedButton>
   );
 };

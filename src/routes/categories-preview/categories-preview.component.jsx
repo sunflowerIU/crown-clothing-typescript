@@ -1,3 +1,4 @@
+import React from "react";
 import CategoryPreview from "../../components/category-preview/category-preview.component";
 import { useSelector } from "react-redux";
 import { Spinner } from "../../components/spinner/spinner.component";
@@ -12,7 +13,7 @@ export const CategoriesPreview = () => {
   return (
     <div className="shop-container">
 
-      {isLoading?<Spinner/>: categories.map((product) => {
+      {isLoading ? <Spinner /> : categories.map((product) => {
         const products = product.items;
         return (
           <CategoryPreview key={product.title} title={product.title} products={products} />

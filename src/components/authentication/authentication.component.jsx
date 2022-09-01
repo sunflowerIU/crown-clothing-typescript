@@ -1,3 +1,4 @@
+import React from "react";
 import { AuthenticationContainer } from "./authentication.styles.jsx";
 import SignUpForm from "../signup/signup-form.component";
 import SignInForm from "../signin/sign-in.component";

@@ -1,3 +1,4 @@
+import React from "react";
 import { Outlet } from "react-router-dom";
 import { Fragment } from "react"; //fragment can be use if we dont want to wrap out component with div
 import {

@@ -1,3 +1,4 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/home/home.component";
 import Navigation from "./routes/navigation/navigation.component";
@@ -19,7 +20,7 @@ const App = () => {
   useEffect(() => {
     // getCurrentUser().then(user=>console.log(user))
     dispatch(checkUserSession())
-    
+
   }, [dispatch]);
 
   //function to calculate total items in cart

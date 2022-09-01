@@ -1,5 +1,6 @@
 // import { useContext } from "react";
 // import { DropdownContext } from "../../contexts/cart.context";
+import React from "react";
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
 import {
   CheckoutContainer,
@@ -19,7 +20,7 @@ const Checkout = () => {
   // const { cartItems, totalAmount } = useContext(DropdownContext);
   const cartItems = useSelector((state) => state.cart.cartItems);
   const totalAmount = useSelector((state) => state.cart.totalAmount);
-  
+
   //function to calculate total amount
   useEffect(() => {
     const checkoutItems = cartItems.map((item) => {
@@ -59,7 +60,7 @@ const Checkout = () => {
         <CheckoutItem key={item.id} cartItem={item} />
       ))}
       <Total>Total: ${totalAmount}</Total>
-      <PaymentForm/>
+      <PaymentForm />
     </CheckoutContainer>
   );
 };

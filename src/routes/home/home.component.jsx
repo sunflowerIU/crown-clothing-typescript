@@ -1,11 +1,12 @@
+import React from "react";
 import Directory from "../../components/directory/directory.component";
 
 //using routes
 function Home() {
 
-  return <Directory/>
+  return <Directory />
 
-  
+
 }
 
 export default Home;

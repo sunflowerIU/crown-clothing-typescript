@@ -1,4 +1,5 @@
 import { FormInputLabel, Input, Group } from "./form-input.styles";
+import React from "react";
 
 const InputForm = ({ label, ...otherInputProps }) => {
   return (

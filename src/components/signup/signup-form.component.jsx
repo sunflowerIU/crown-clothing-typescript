@@ -1,9 +1,10 @@
+import React from "react";
 import { useState } from "react";
 import InputForm from "../input-form/input-form.component";
-import {SignupContainer} from "./signup-form.styles";
+import { SignupContainer } from "./signup-form.styles";
 import Button from "../button/button.component";
 import { emailSignUpStart } from "../../store/user/user.reducer";
-import {useDispatch} from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 //1st. specify default form fields that we need
 const defaultFormFields = {
@@ -38,7 +39,7 @@ const SignUpForm = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     if (password !== passwordConfirm) return alert("password do not match");
-    const data = {displayName,email,password}
+    const data = { displayName, email, password }
     dispatch(emailSignUpStart(data))
     // try {
     //   const response = await CreateAuthUserUsingEmailAndPassword(

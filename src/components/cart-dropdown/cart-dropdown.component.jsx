@@ -1,3 +1,4 @@
+import React from "react";
 import {
   CartDropDownContainer,
   EmptyMessage,
@@ -13,7 +14,7 @@ import { useSelector } from "react-redux";
 
 export const CartDropdown = () => {
   // const { cartItems } = useContext(DropdownContext);
-  const cartItems = useSelector(state=>state.cart.cartItems)
+  const cartItems = useSelector(state => state.cart.cartItems)
   const navigate = useNavigate();
   const goToCheckoutHandler = () => {
     navigate("/checkout");
